@@ -1,0 +1,8 @@
+Para instalar o Unity, executei os comandos abaixo usando o Package Manager Console:
+
+* Install-Package Unity
+* Install-Package Unity.Mvc
+
+Realizei a instalação no projeto MVC
+
+

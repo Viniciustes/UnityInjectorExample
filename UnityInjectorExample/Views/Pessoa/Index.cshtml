@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Dominio.Entidades.Pessoa>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pessoa</h2>
+
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nome Pessoa</th>
+                <th>Data Nascimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(x => item.Nome)</td>
+                <td>@Html.DisplayFor(x => item.DataNascimento)</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
